@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gui.GeneratingActivity"
+    android:background="@drawable/backgroundgen">
+
+    <ProgressBar
+        android:id="@+id/determinateBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="352dp"
+        android:layout_height="37dp"
+        android:progress="25"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="415dp" />
+
+
+    <TextView
+        android:id="@+id/gen"
+        android:layout_width="326dp"
+        android:layout_height="71dp"
+        android:text="@string/gen"
+        android:textSize="35sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

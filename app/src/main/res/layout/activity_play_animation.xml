@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gui.PlayAnimationActivity"
+    android:background="@drawable/backgroundmaze">
+
+    <Button
+        android:id="@+id/maze_button"
+        android:layout_width="119dp"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/showmaze"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="273dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <Button
+        android:id="@+id/walls_button"
+        android:layout_width="125dp"
+        android:layout_height="58dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/walls"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <Button
+        android:id="@+id/solution_button"
+        android:layout_width="117dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/showsol"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <Button
+        android:id="@+id/short_button"
+        android:layout_width="291dp"
+        android:layout_height="332dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="@string/shortcut"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="199dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

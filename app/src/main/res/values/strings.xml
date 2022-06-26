@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">A-Maze</string>
+    <string name="welcome">Welcome to Oz!</string>
+    <string name="explore_b">Explore</string>
+    <string name="revisit_b">Revisit</string>
+    <string name="Dorothy">Help Dorothy and her friends get to the Emerald City!</string>
+    <string name="Level">Game level:</string>
+    <string name="rooms">Include rooms:</string>
+    <string name="player">Choose Player:</string>
+    <string name="builder">Choose Builder:</string>
+    <string name="gen">Generating...</string>
+    <string name="walls">Show walls</string>
+    <string name="showmaze">Show Maze</string>
+    <string name="showsol">Show Solution</string>
+    <string name="shortcut">Shortcut</string>
+    <string name="Oz">Dorothy and the gang made it to the Emerald City!</string>
+    <string name="home">Return home</string>
+    <string-array name="builder">
+        <item>DFS</item>
+        <item>Prim</item>
+        <item>Kruskal</item>
+    </string-array>
+    <string-array name="driver">
+        <item>Manual</item>
+        <item>Wizard</item>
+        <item>Wallfollower</item>
+    </string-array>
+</resources>

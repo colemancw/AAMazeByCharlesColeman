@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gui.AMazeActivity"
+    android:background="@drawable/background"
+    >
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="334dp"
+        android:layout_height="69dp"
+        android:text="@string/welcome"
+        android:textSize="43sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+
+    #text box that replaces text - get value and call textbox.settext
+
+    <TextView
+        android:id="@+id/Dorothy"
+        android:layout_width="199dp"
+        android:layout_height="59dp"
+        android:text="@string/Dorothy"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="194dp" />
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="151dp"
+        android:layout_height="38dp"
+        android:text="@String/Level"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+    <TextView
+        android:id="@+id/player"
+        android:layout_width="151dp"
+        android:layout_height="38dp"
+        android:text="@string/player"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="446dp" />
+
+    <TextView
+        android:id="@+id/builder"
+        android:layout_width="152dp"
+        android:layout_height="35dp"
+        android:text="@string/builder"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="379dp" />
+
+    <TextView
+        android:id="@+id/rooms"
+        android:layout_width="151dp"
+        android:layout_height="38dp"
+        android:text="@string/rooms"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="314dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="336dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="40dp"
+        android:max="9"
+        android:progress="7"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="549dp" />
+
+    <Button
+        android:id="@+id/explore_button"
+        android:layout_width="122dp"
+        android:layout_height="49dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/explore_b"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="578dp" />
+
+    <Button
+        android:id="@+id/revisit_button"
+        android:layout_width="123dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/revisit_b"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="647dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
