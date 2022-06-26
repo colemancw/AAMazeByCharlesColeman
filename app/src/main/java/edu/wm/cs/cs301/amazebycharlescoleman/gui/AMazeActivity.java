@@ -7,11 +7,15 @@ import android.os.Bundle;
 import android.widget.SeekBar;
 import android.widget.Button;
 import android.view.View;
+import android.widget.TextView;
 
 import edu.wm.cs.cs301.amazebycharlescoleman.R;
 
 public class AMazeActivity extends AppCompatActivity {
     Button explore_button;
+    Button revisit_button;
+    Button roompick;
+    TextView roompic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,16 +25,22 @@ public class AMazeActivity extends AppCompatActivity {
         SeekBar seekBar = findViewById(R.id.seekBar);
         seekBar.setOnSeekBarChangeListener(seekBarChangeListener);
         explore_button = (Button) findViewById(R.id.explore_button);
-        //maybe move
-        explore_button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), GeneratingActivity.class);
+        revisit_button = (Button) findViewById(R.id.revisit_button);
+
+        //roompick = (Button) findViewById(R.id.roompick);
+        //roompic = (TextView)
+        explore_button.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view){
+                Intent i = new Intent(AMazeActivity.this, GeneratingActivity.class);
                 startActivity(i);
             }
         });
 
 
     }
+
+
+
     SeekBar.OnSeekBarChangeListener seekBarChangeListener = new SeekBar.OnSeekBarChangeListener() {
 
         @Override

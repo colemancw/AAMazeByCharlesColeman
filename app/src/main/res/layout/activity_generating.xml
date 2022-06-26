@@ -12,6 +12,7 @@
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="352dp"
         android:layout_height="37dp"
+        android:duration="10"
         android:progress="25"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="29dp"
@@ -26,7 +27,7 @@
         android:textSize="35sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="275dp" />
+        tools:layout_editor_absoluteY="353dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -46,5 +46,14 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="60dp"
         tools:layout_editor_absoluteY="199dp" />
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="88dp"
+        android:layout_height="49dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/back"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="651dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

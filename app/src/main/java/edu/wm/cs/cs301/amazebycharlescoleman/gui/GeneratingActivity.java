@@ -15,7 +15,7 @@ public class GeneratingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_generating);
-        Intent j = new Intent(getApplicationContext(), GeneratingActivity.class);
+        Intent j = new Intent(getApplicationContext(), PlayManuallyActivity.class);
         startActivity(j);
         }
     }

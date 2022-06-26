@@ -10,6 +10,8 @@
     >
 
 
+    #text box that replaces text - get value and call textbox.settext
+
     <TextView
         android:id="@+id/welcome"
         android:layout_width="334dp"
@@ -18,16 +20,13 @@
         android:textSize="43sp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="88dp" />
-
-
-    #text box that replaces text - get value and call textbox.settext
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="86dp" />
 
     <TextView
         android:id="@+id/Dorothy"
-        android:layout_width="199dp"
-        android:layout_height="59dp"
+        android:layout_width="195dp"
+        android:layout_height="86dp"
         android:text="@string/Dorothy"
         android:textSize="20sp"
         tools:ignore="MissingConstraints"
@@ -38,34 +37,13 @@
         android:id="@+id/level"
         android:layout_width="151dp"
         android:layout_height="38dp"
-        android:text="@String/Level"
+        android:text="@string/level"
         android:textSize="22sp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="503dp" />
+        tools:layout_editor_absoluteY="511dp" />
 
-    <TextView
-        android:id="@+id/player"
-        android:layout_width="151dp"
-        android:layout_height="38dp"
-        android:text="@string/player"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="446dp" />
-
-    <TextView
-        android:id="@+id/builder"
-        android:layout_width="152dp"
-        android:layout_height="35dp"
-        android:text="@string/builder"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="379dp" />
 
     <TextView
         android:id="@+id/rooms"
@@ -76,7 +54,7 @@
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="314dp" />
+        tools:layout_editor_absoluteY="346dp" />
 
     <SeekBar
         android:id="@+id/seekBar"
@@ -95,6 +73,7 @@
         android:layout_height="49dp"
         android:backgroundTint="@color/teal_200"
         android:text="@string/explore_b"
+        android:onClick="onClick"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="144dp"
         tools:layout_editor_absoluteY="578dp" />
@@ -109,6 +88,59 @@
         tools:layout_editor_absoluteX="144dp"
         tools:layout_editor_absoluteY="647dp" />
 
+    <Button
+        android:id="@+id/yes_button"
+        android:layout_width="63dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/yes"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="204dp"
+        tools:layout_editor_absoluteY="344dp" />
+
+    <Button
+        android:id="@+id/no_button"
+        android:layout_width="57dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/no"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="289dp"
+        tools:layout_editor_absoluteY="344dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/menu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="321dp"
+        android:layout_height="48dp"
+        android:hint="@string/builder"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="392dp">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/menu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="321dp"
+        android:layout_height="43dp"
+        android:hint="@string/player"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="458dp">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
